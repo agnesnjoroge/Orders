@@ -5,8 +5,8 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <BrowserRouter basename={"/<Orders>/"}>
+   <HashRouter basename={"/<Orders>/"}>
     <App />
-  </BrowserRouter>
+  </HashRouter>
   </React.StrictMode>,
 )
