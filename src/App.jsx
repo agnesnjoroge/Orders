@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 
 import Navbar from "./components/Navbar";
@@ -15,7 +16,9 @@ function App() {
   return (
     <>
       <div className="App">
-      <Router>
+      <Router
+      basename={import.meta.env.DEV ? '/' : '/Orders/'}
+    >
       <Navbar/>
         <Routes>
           <Route path="/" exact element={<Home/>} />
@@ -33,3 +36,6 @@ function App() {
 }
 
 export default App
+
+
+
