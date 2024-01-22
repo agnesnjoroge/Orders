@@ -17,7 +17,7 @@ function App() {
     <>
       <div className="App">
       <Router
-      basename={import.meta.env.DEV ? '/' : '/Orders/'}
+      basename={import.meta.env.DEV ? './' : '/Orders/'}
     >
       <Navbar/>
         <Routes>
